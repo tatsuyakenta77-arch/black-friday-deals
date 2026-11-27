@@ -35,17 +35,17 @@ a { color: var(--blue); }
 .brand .radar { color: var(--amber); }
 .tagline { color: var(--muted); margin: 4px 0 0; font-size: 15px; }
 
-.hero { padding: 28px 0 8px; }
-.hero h1 { font-size: 40px; line-height: 1.1; margin: 0 0 10px; letter-spacing: -1px; }
-.hero p { max-width: 760px; color: #d8d2c4; margin: 0 0 16px; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 18px 0 8px; }
+.hero { padding: 20px 0 6px; }
+.hero h1 { font-size: 34px; line-height: 1.1; margin: 0 0 8px; letter-spacing: -1px; }
+.hero p { max-width: 760px; color: #d8d2c4; margin: 0 0 12px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 14px 0 6px; }
 .stat {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 14px 16px;
+  padding: 11px 14px;
 }
-.stat strong { display: block; font-size: 28px; color: var(--amber); line-height: 1.1; }
+.stat strong { display: block; font-size: 24px; color: var(--amber); line-height: 1.1; }
 .stat span { font-size: 13px; color: var(--muted); }
 .checked { font-size: 13px; color: var(--muted); }
 
@@ -54,12 +54,12 @@ a { color: var(--blue); }
   top: 0;
   z-index: 5;
   background: var(--bg);
-  padding: 14px 0 12px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--line);
 }
 #search {
   width: 100%;
-  padding: 13px 16px;
+  padding: 11px 14px;
   font-size: 16px;
   border-radius: 10px;
   border: 1px solid var(--line);
@@ -156,6 +156,12 @@ a { color: var(--blue); }
 .method h2 { font-size: 22px; }
 .method li { margin-bottom: 6px; }
 .site-footer { border-top: 1px solid var(--line); margin-top: 28px; padding: 18px 0 26px; color: var(--muted); font-size: 13px; }
+
+/* A deal detail page focuses on the deal: hero, filters and method hide. */
+body.detail-view .hero,
+body.detail-view .controls,
+body.detail-view .method { display: none; }
+body.detail-view .grid { display: block; }
 
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }

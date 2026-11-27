@@ -82,11 +82,13 @@ function route() {
   statsEl.innerHTML = statsHtml(statsFor(deals));
   checkedEl.textContent = `All prices checked ${CHECKED_LABEL} from the named store or source.`;
   if (detail) {
+    document.body.classList.add("detail-view");
     const deal = deals.find((d) => d.id === detail[1]);
     grid.innerHTML = deal ? detailHtml(deal) : `<p class="empty">That deal is not in this finder. <a href="#/">Back to all deals</a>.</p>`;
     countEl.textContent = deal ? `${deal.store} · ${deal.category}` : "";
     fillControls(state);
   } else {
+    document.body.classList.remove("detail-view");
     applyState(state);
   }
   window.scrollTo(0, 0);
