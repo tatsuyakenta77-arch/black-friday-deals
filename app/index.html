@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealRadar — Real Black Friday &amp; Cyber Monday Deals 2026</title>
+<meta name="description" content="32 real Black Friday and Cyber Monday deals, each price-checked on 27 Nov 2026, with an honest verdict on whether each one is really a deal.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <p class="brand"><span class="radar" aria-hidden="true">◉</span> DealRadar</p>
+    <p class="tagline">Real Black Friday &amp; Cyber Monday deals — checked by hand, not scraped from a sale banner.</p>
+  </div>
+</header>
+<main id="app" class="wrap">
+  <section class="hero">
+    <h1>Black Friday deals that are actually deals.</h1>
+    <p>Every price below was checked on 27 November 2026 at the named store or in a named deals source. Each deal carries a verdict — <strong>new low</strong>, <strong>strong price</strong> or <strong>modest cut</strong> — so you can tell a genuine bargain from a routine "sale" sticker.</p>
+    <div class="stats" id="stats"></div>
+    <p class="checked" id="checked-line"></p>
+  </section>
+  <section class="controls" aria-label="Search and filter deals">
+    <input id="search" type="search" placeholder="Search deals — try “AirPods”, “OLED”, “LEGO”…" aria-label="Search deals">
+    <div class="control-row">
+      <label>Store
+        <select id="store" aria-label="Filter by store"></select>
+      </label>
+      <label>Min. discount
+        <select id="discount" aria-label="Filter by minimum discount">
+          <option value="0">Any discount</option>
+          <option value="25">25% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </label>
+      <label>Verdict
+        <select id="verdict" aria-label="Filter by verdict">
+          <option value="all">Any verdict</option>
+          <option value="new-low">New lows only</option>
+          <option value="strong">Strong prices</option>
+          <option value="modest">Modest cuts</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort" aria-label="Sort deals">
+          <option value="best">Best deals first</option>
+          <option value="saving">Biggest saving ($)</option>
+          <option value="percent">Biggest discount (%)</option>
+          <option value="price-low">Lowest price</option>
+          <option value="price-high">Highest price</option>
+        </select>
+      </label>
+    </div>
+    <div class="chips" id="categories" role="group" aria-label="Filter by category"></div>
+  </section>
+  <p class="count" id="count" aria-live="polite"></p>
+  <section class="grid" id="grid" aria-live="polite"></section>
+  <section class="method">
+    <h2>How a deal earns its verdict</h2>
+    <ul>
+      <li><strong>REAL DEAL · NEW LOW</strong> — the lowest price ever tracked for that product, confirmed by a deals source that follows its price history.</li>
+      <li><strong>REAL DEAL · STRONG PRICE</strong> — a large cut (usually 30% or more) off a genuine usual price the store itself lists.</li>
+      <li><strong>REAL DEAL · MODEST CUT</strong> — a real discount, but small in percent. Worth it only if you already wanted the product.</li>
+    </ul>
+    <p>We never list a product, store, price or link that no store or deals source showed when we checked it. Prices move all day on Black Friday — always confirm the price at checkout before you buy.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>DealRadar · Black Friday 2026 · Prices checked 27 Nov 2026, 08:20 UTC · Deals end with each store's sale; Cyber Monday is 30 Nov 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
